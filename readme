@@ -1,0 +1,12 @@
+Modified A* algorithm that only allows the agent to move forwards and backwards with diagonals (so the agent cannot move left and right)
+If no solution exists "No solution" is displayed
+Original code is from https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2
+
+Changes
+1. Added direction class that has 8 different directions
+2. Added direction class to Node class specifying a node in a position in a direction
+3. modified node equals method to include direction
+4. Fixed bug in original code for continuing when node has already been visited
+(before the fix, it would continue but in the incorrect loop, this happened in two different places, so it ran forever)
+5. Modified path print to include direction
+6. printed map with the path of the car and the direction it was headed in
